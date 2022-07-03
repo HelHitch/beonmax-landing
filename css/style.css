@@ -13,8 +13,7 @@ h1 {
 }
 
 .promo {
-  display: flex;
-  min-height: 780px;
+  min-height: 800px;
   background: url("../img/main_bg.png") center center/cover no-repeat;
 }
 
@@ -108,7 +107,7 @@ h2.title {
 
 .container .btn {
   display: block;
-  margin: 64px auto 20px;
+  margin: 64px auto 72px;
   background-color: #f9bf3b;
   color: black;
   padding: 15px 14px;
@@ -127,7 +126,6 @@ h2.title {
 .more {
   color: white;
   text-align: center;
-  margin-bottom: 59px;
 }
 
 .more .more_text h3 {
@@ -143,7 +141,7 @@ h2.title {
 .more img {
   display: block;
   margin: 0 auto;
-  margin-top: 4px;
+  margin-bottom: 59px;
 }
 
 .waiting {
@@ -247,7 +245,7 @@ h2.title {
 .finish {
   min-height: 447px;
   background: url("../img/second_bg.png") center center/cover no-repeat;
-  padding: 86px 0 69px;
+  padding: 86px 0 68px;
 }
 
 .finish-header {
@@ -269,7 +267,7 @@ h2.title {
 }
 
 .finish .finish-wrapper .finish-item {
-  width: 204px;
+  min-width: 204px;
 }
 
 .finish .finish-wrapper .finish-item .finish-round {
@@ -301,6 +299,10 @@ h2.title {
 
 .gift img {
   margin-bottom: 45px;
+  width: 154px;
+  height: 174px;
+  left: 884px;
+  top: 88px;
 }
 
 .gift p {
@@ -315,7 +317,7 @@ button.btn2 {
   background-color: #2798b9 !important;
   color: white !important;
   display: block;
-  margin: 64px auto 20px;
+  margin: 64px auto 0;
   padding: 15px 14px;
   font-style: normal;
   font-family: "Roboto Condensed", sans-serif;
@@ -333,6 +335,7 @@ button.btn2 {
   display: flex;
   text-align: center;
   padding: 89px 0 50px;
+  min-height: 511px;
 }
 
 .data img {
@@ -341,6 +344,7 @@ button.btn2 {
 
 .data-text .data-text-first,
 .data-text .data-text-last {
+  text-transform: uppercase;
   margin-bottom: 31px;
   font-size: 30px;
 
@@ -361,11 +365,12 @@ button.btn2 {
 .data-text .data-text-last {
   font-size: 23px;
   line-height: 20px;
+  margin-bottom: 0;
 }
 
 footer {
   padding: 54px 0 67px;
-  min-height: 169px;
+  max-height: 169px;
   display: flex;
   text-align: center;
   background-color: black;
@@ -418,6 +423,11 @@ footer a {
   .optimization .optimization-text {
     margin: 0;
   }
+
+  .finish {
+    min-height: 450px;
+  }
+
   .finish .finish-wrapper {
     flex-direction: column;
     align-items: center;
