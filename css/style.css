@@ -107,7 +107,7 @@ h2.title {
 
 .container .btn {
   display: block;
-  margin: 64px auto 72px;
+  margin: 64px auto 43px;
   background-color: #f9bf3b;
   color: black;
   padding: 15px 14px;
@@ -126,6 +126,7 @@ h2.title {
 .more {
   color: white;
   text-align: center;
+  margin: 0 auto;
 }
 
 .more .more_text h3 {
@@ -141,7 +142,6 @@ h2.title {
 .more img {
   display: block;
   margin: 0 auto;
-  margin-bottom: 59px;
 }
 
 .waiting {
@@ -339,13 +339,13 @@ button.btn2 {
 }
 
 .data img {
-  margin-bottom: 36px;
+  padding: 0 399px 36px;
 }
 
 .data-text .data-text-first,
 .data-text .data-text-last {
   text-transform: uppercase;
-  margin-bottom: 31px;
+  margin: 0 322px 44px;
   font-size: 30px;
 
   font-style: normal;
@@ -354,18 +354,20 @@ button.btn2 {
 
 .data-text .data-data {
   font-size: 36px;
-
+  margin-bottom: 10.5px;
+  height: 31px;
   font-style: normal;
   font-weight: 900;
   line-height: 36px;
   color: #299cbd;
-  margin-bottom: 27px;
 }
 
 .data-text .data-text-last {
-  font-size: 23px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 19px;
   line-height: 20px;
-  margin-bottom: 0;
+  margin: 0 280px;
 }
 
 footer {
@@ -388,7 +390,7 @@ footer a {
 
 @media screen and (max-width: 768px) {
   .container {
-    padding: 0 4% 0;
+    padding: 0 10% 0;
   }
   .waiting .waiting_wrapper {
     display: flex;
@@ -434,23 +436,41 @@ footer a {
   }
 
   .data img {
-    width: 100%;
+    width: 80%;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0 !important;
   }
   .data-text p.data-text-first {
     font-size: 1.2em;
+    margin: 0 auto 20px;
   }
 
-  .data-text h3.data-data {
-    font-size: 1.6em;
-  }
-
-  .promo > .container {
+  .data-text .data-data {
+    width: 100%;
+    font-size: 2em;
+    height: auto;
+    line-height: 36px;
     padding: 0;
+    margin: 0 auto 15px;
+  }
+  .data .data-text-last {
+    margin: 0 auto;
+    font-size: 0.8em;
   }
 
   .promo .title,
   .promo h2.title {
     font-size: 1.5em;
+  }
+
+  .promo .btn {
+    font-size: 0.9em;
+    padding: 2% 4%;
+  }
+
+  .promo .more {
+    padding-bottom: 20px;
   }
 
   .promo .simple h2 {
